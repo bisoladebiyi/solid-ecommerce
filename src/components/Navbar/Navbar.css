@@ -1,0 +1,20 @@
+.links li {
+  position: relative;
+  cursor: pointer;
+}
+
+.links li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ff8a00;
+  transition: width 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+.links li:hover::after {
+  width: 100%;
+}
